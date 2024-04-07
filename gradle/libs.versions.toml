@@ -1,0 +1,99 @@
+[versions]
+activity-compose = "1.8.2"
+kotlinxCoroutinesCore = "1.8.1-Beta"
+ktx = "1.12.0"
+lifecycle-runtime-ktx = "2.7.0"
+androidGradlePlugin = "8.2.0"
+kotlin = "1.9.0"
+mvikotlin = "3.3.0"
+orbit = "7.0.1"
+reduxKotlinThreadsafeJvm = "0.5.5"
+reduxKotlinComposeJvm = "0.6.0"
+voyager = "1.0.0"
+agp = "8.2.2"
+compose-plugin = "1.5.11"
+androidxComposeBom = "2024.04.00"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+flowmvi = "2.5.0-alpha06"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-runtime-ktx" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
+# AndroidX - Compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+compose-gradle-plugin = { module = "org.jetbrains.compose:org.jetbrains.compose.gradle.plugin", name = "kotlin-gradle-plugin", version.ref = "compose-plugin" }
+
+# voyager
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
+voyager-bottomSheetNavigator = { module = "cafe.adriel.voyager:voyager-bottom-sheet-navigator", version.ref = "voyager" }
+voyager-tabNavigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+voyager-hilt = { module = "cafe.adriel.voyager:voyager-hilt", version.ref = "voyager" }
+voyager-kodein = { module = "cafe.adriel.voyager:voyager-kodein", version.ref = "voyager" }
+voyager-rxjava = { module = "cafe.adriel.voyager:voyager-rxjava", version.ref = "voyager" }
+
+# maverics
+mavericks = { module = "com.airbnb.android:mavericks-compose", version = "3.0.9" }
+mavericks-compose = { module = "com.airbnb.android:mavericks", version = "3.0.9" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# MVIKotlin
+mvikotlin = { module = "com.arkivanov.mvikotlin:mvikotlin", version.ref = "mvikotlin" }
+mvikotlin-extensions-coroutines = { module = "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines", version.ref = "mvikotlin" }
+mvikotlin-logging = { module = "com.arkivanov.mvikotlin:mvikotlin-logging", version.ref = "mvikotlin" }
+mvikotlin-main = { module = "com.arkivanov.mvikotlin:mvikotlin-main", version.ref = "mvikotlin" }
+mvikotlin-timetravel = { module = "com.arkivanov.mvikotlin:mvikotlin-timetravel", version.ref = "mvikotlin" }
+
+# MVI Orbit
+orbit-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "orbit" }
+orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbit" }
+orbit-viewmodel = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbit" }
+
+# Redux-Kotlin
+redux-kotlin-threadsafe-jvm = { module = "org.reduxkotlin:redux-kotlin-threadsafe-jvm", version.ref = "reduxKotlinThreadsafeJvm" }
+redux-kotlin-compose-jvm = { module = "org.reduxkotlin:redux-kotlin-compose-jvm", version.ref = "reduxKotlinComposeJvm" }
+
+# FlowMVI
+flowmvi-core = { module = "pro.respawn.flowmvi:core", version.ref = "flowmvi" }
+flowmvi-test = { module = "pro.respawn.flowmvi:test", version.ref = "flowmvi" }
+flowmvi-compose = { module = "pro.respawn.flowmvi:compose", version.ref = "flowmvi" }
+flowmvi-android = { module = "pro.respawn.flowmvi:android", version.ref = "flowmvi" }
+flowmvi-savedstate = { module = "pro.respawn.flowmvi:savedstate", version.ref = "flowmvi" }
+flowmvi-debugger-client = { module = "pro.respawn.flowmvi:debugger-plugin", version.ref = "flowmvi" }
+flowmvi-essenty = { module = "pro.respawn.flowmvi:essenty", version.ref = "flowmvi" }
+flowmvi-essenty-compose = { module = "pro.respawn.flowmvi:essenty-compose", version.ref = "flowmvi" }
+
+[bundles]
+# AndroidX - Compose
+androidx-compose-bom = ["androidx-compose-ui", "androidx-compose-ui-tooling-preview", "androidx-compose-material3"]
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "androidGradlePlugin" }
